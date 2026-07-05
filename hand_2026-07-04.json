@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "id": "hand_001",
+    "title": "Squeeze spot from CO",
+    "date": "2026-07-05"
+  },
+  "hero": {
+    "cards": ["Ah", "Kh"],
+    "position": "CO"
+  },
+  "streets": [
+    {
+      "name": "Preflop",
+      "points": 100,
+      "state": {
+        "communityCards": [],
+        "pot": 15,
+        "toCall": 10,
+        "players": [
+          { "position": "UTG", "stack": 980, "action": "raise 10", "style": ["aggressive", "fish"] },
+          { "position": "HJ",  "stack": 1000, "action": "fold", "style": [] },
+          { "position": "CO",  "stack": 990,  "isHero": true, "style": [] },
+          { "position": "BTN", "stack": 1000, "action": "fold", "style": ["calm"] },
+          { "position": "SB",  "stack": 995,  "action": "fold", "style": ["scary"] },
+          { "position": "BB",  "stack": 998,  "action": "call", "style": ["fish"] }
+        ]
+      },
+      "solutions": [
+        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X Because XBecause XBecause XBecause XBecause XBecause XBecause XBecause XBecause X"},
+        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      ]
+    },
+    {
+      "name": "Flop",
+      "points": 200,
+      "state": {
+        "communityCards": ["2h", "7d", "Ks"],
+        "pot": 45,
+        "toCall": 0,
+        "players": [
+          { "position": "UTG", "stack": 960, "action": "check", "style": ["aggressive", "fish"] },
+          { "position": "CO",  "stack": 960,  "isHero": true, "style": [""] },
+          { "position": "BB",  "stack": 975,  "action": "check", "style": ["fish"] }
+        ]
+      },
+      "solutions": [
+        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X"},
+        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      ]
+    },
+    {
+      "name": "Turn",
+      "points": 300,
+      "state": {
+        "communityCards": ["2h", "7d", "Ks", "Qh"],
+        "pot": 105,
+        "toCall": 50,
+        "players": [
+          { "position": "UTG", "stack": 940, "action": "bet 50", "style": ["aggressive", "fish"] },
+          { "position": "CO",  "stack": 900,  "isHero": true, "style": [""] },
+          { "position": "BB",  "stack": 955,  "action": "fold", "style": ["fish"] }
+        ]
+      },
+      "solutions": [
+        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X"},
+        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      ]
+    },
+    {
+      "name": "River",
+      "points": 400,
+      "state": {
+        "communityCards": ["2h", "7d", "Ks", "Qh", "Jh"],
+        "pot": 305,
+        "toCall": 0,
+        "players": [
+          { "position": "UTG", "stack": 790, "action": "check", "style": ["aggressive", "fish"] },
+          { "position": "CO",  "stack": 750,  "isHero": true, "style": [""] }
+        ]
+      },
+      "solutions": [
+        {"name": "pro", "percentage": 1, "action": "allin", "message": "Because X"},
+        {"name": "auto", "percentage": 0.7, "action": "raise", "message": "Because X"}
+      ]
+    }
+  ]
+}

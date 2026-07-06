@@ -11,36 +11,49 @@
     "cards": ["Qh", "Th"],
     "position": "BTN"
   },
+  "gameInfo": {
+    "blinds": [15000, 30000],
+    "players": [
+      {
+        "position": "BTN",
+        "name": "Leo Margets",
+        "stack": 2985000,
+        "style": ["elite", "balanced", "professional"],
+        "isHero": true
+      },
+      {
+        "position": "SB",
+        "name": "Alx",
+        "stack": 5800000,
+        "style": ["calm"]
+      },
+      {
+        "position": "BB",
+        "name": "Chim",
+        "stack": 6780000,
+        "style": ["fish"]
+      }
+    ]
+  },
   "streets": [
     {
       "name": "Preflop",
       "points": 100,
-      "state": {
-        "communityCards": [],
-        "pot": 360,
-        "toCall": 0,
-        "players": [
-          {
-            "position": "BTN",
-            "stack": 2985,
-            "action": "raise 150",
-            "isHero": true,
-            "style": ["elite", "balanced"]
-          },
-          {
-            "position": "SB",
-            "stack": 5800,
-            "action": "fold",
-            "style": ["professional"]
-          },
-          {
-            "position": "BB",
-            "stack": 6780,
-            "action": "call 150",
-            "style": ["aggressive", "professional"]
-          }
-        ]
-      },
+      "communityCards": [],
+      "actions": [
+        {
+          "position": "BTN",
+          "action": "raise 150000"
+        },
+        {
+          "position": "SB",
+          "action": "fold"
+        },
+        {
+          "position": "BB",
+          "action": "call 150000"
+        }
+      ],
       "solutions": [
         {
           "name": "pro",

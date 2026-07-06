@@ -1,86 +1,172 @@
 {
   "meta": {
-    "id": "hand_001",
-    "title": "Squeeze spot from CO",
-    "date": "2026-07-05"
+    "id": "hand_002",
+    "title": "Thomas Eychenne vs Umberto Zaffagnini - EPT Barcelona",
+    "date": "",
+    "video": "https://youtu.be/jUDEAbmjn7M?t=438",
+    "videoTimestamp": "7:18"
   },
   "hero": {
-    "cards": ["Ah", "Kh"],
-    "position": "CO"
+    "position": "CO",
+    "cards": ["Td", "8d"]
+  },
+  "gameInfo": {
+    "blinds": [125000, 250000],
+    "players": [
+      {
+        "position": "CO",
+        "name": "Thomas Eychenne",
+        "stack": 19350000,
+        "style": ["elite", "balanced", "professional"],
+        "isHero": true
+      },
+      {
+        "position": "SB",
+        "name": "Umberto Zaffagnini",
+        "stack": 9130000,
+        "style": ["professional", "aggressive"]
+      }
+    ]
   },
   "streets": [
     {
       "name": "Preflop",
       "points": 100,
-      "state": {
-        "communityCards": [],
-        "pot": 15,
-        "toCall": 10,
-        "players": [
-          { "position": "UTG", "stack": 980, "action": "raise 10", "style": ["aggressive", "fish"] },
-          { "position": "HJ",  "stack": 1000, "action": "fold", "style": [] },
-          { "position": "CO",  "stack": 990,  "isHero": true, "style": [] },
-          { "position": "BTN", "stack": 1000, "action": "fold", "style": ["calm"] },
-          { "position": "SB",  "stack": 995,  "action": "fold", "style": ["scary"] },
-          { "position": "BB",  "stack": 998,  "action": "call", "style": ["fish"] }
-        ]
-      },
-      "solutions": [
-        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X Because XBecause XBecause XBecause XBecause XBecause XBecause XBecause XBecause X"},
-        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      "communityCards": [],
+      "actions": [
+        {
+          "position": "CO",
+          "action": "raise",
+          "amount": 550000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "raise",
+              "message": "Hero: Eychenne opens T8s from the CO because the hand has strong playability and can pressure the blinds.\n\nSolver: Raise is the highest-EV action. T8s is strong enough to enter the pot aggressively 5-handed.\n\nAvoid: Folding is too tight, while limping gives up initiative with a hand that benefits from building the pot."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "raise",
+              "message": "Hero: Eychenne opens T8s from the CO because the hand has strong playability and can pressure the blinds.\n\nSolver: Raise is the highest-EV action. T8s is strong enough to enter the pot aggressively 5-handed.\n\nAvoid: Folding is too tight, while limping gives up initiative with a hand that benefits from building the pot."
+            }
+          ]
+        },
+        {
+          "position": "SB",
+          "action": "raise",
+          "amount": 1400000
+        },
+        {
+          "position": "CO",
+          "action": "call",
+          "amount": 850000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "call",
+              "message": "Hero: Eychenne calls because T8s has good postflop playability and he will play the rest of the hand in position.\n\nSolver: Call is the highest-EV action. The price and stack depth allow this suited connector to continue profitably.\n\nAvoid: Folding gives up too much equity, while a 4-bet creates unnecessary variance and performs poorly against a shove."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "call",
+              "message": "Hero: Eychenne calls because T8s has good postflop playability and he will play the rest of the hand in position.\n\nSolver: Call is the highest-EV action. The price and stack depth allow this suited connector to continue profitably.\n\nAvoid: Folding gives up too much equity, while a 4-bet creates unnecessary variance and performs poorly against a shove."
+            }
+          ]
+        }
       ]
     },
     {
       "name": "Flop",
       "points": 200,
-      "state": {
-        "communityCards": ["2h", "7d", "Ks"],
-        "pot": 45,
-        "toCall": 0,
-        "players": [
-          { "position": "UTG", "stack": 960, "action": "check", "style": ["aggressive", "fish"] },
-          { "position": "CO",  "stack": 960,  "isHero": true, "style": [""] },
-          { "position": "BB",  "stack": 975,  "action": "check", "style": ["fish"] }
-        ]
-      },
-      "solutions": [
-        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X"},
-        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      "communityCards": ["7c", "Jd", "8c"],
+      "actions": [
+        {
+          "position": "SB",
+          "action": "check"
+        },
+        {
+          "position": "CO",
+          "action": "check",
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "check",
+              "message": "Hero: Eychenne checks back with middle pair and a gutshot, keeping the pot controlled and protecting his showdown value.\n\nSolver: Check is the highest-EV action. The hand can improve on many turns and does not need immediate protection.\n\nAvoid: Betting can be called by stronger hands or face a check-raise, while a large bet unnecessarily turns the hand into a bluff."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "check",
+              "message": "Hero: Eychenne checks back with middle pair and a gutshot, keeping the pot controlled and protecting his showdown value.\n\nSolver: Check is the highest-EV action. The hand can improve on many turns and does not need immediate protection.\n\nAvoid: Betting can be called by stronger hands or face a check-raise, while a large bet unnecessarily turns the hand into a bluff."
+            }
+          ]
+        }
       ]
     },
     {
       "name": "Turn",
       "points": 300,
-      "state": {
-        "communityCards": ["2h", "7d", "Ks", "Qh"],
-        "pot": 105,
-        "toCall": 50,
-        "players": [
-          { "position": "UTG", "stack": 940, "action": "bet 50", "style": ["aggressive", "fish"] },
-          { "position": "CO",  "stack": 900,  "isHero": true, "style": [""] },
-          { "position": "BB",  "stack": 955,  "action": "fold", "style": ["fish"] }
-        ]
-      },
-      "solutions": [
-        {"name": "pro", "percentage": 1, "action": "raise", "message": "Because X"},
-        {"name": "auto", "percentage": 0.7, "action": "call", "message": "Because X"}
+      "communityCards": ["7c", "Jd", "8c", "Th"],
+      "actions": [
+        {
+          "position": "SB",
+          "action": "raise",
+          "amount": 1200000
+        },
+        {
+          "position": "CO",
+          "action": "call",
+          "amount": 1200000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "call",
+              "message": "Hero: Eychenne calls with two pair, keeping bluffs in and avoiding a huge pot on a very connected board.\n\nSolver: Call is the highest-EV action. The hand is too strong to fold but does not benefit enough from raising.\n\nAvoid: Folding is far too tight, while raising isolates too often against straights and stronger value hands."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "call",
+              "message": "Hero: Eychenne calls with two pair, keeping bluffs in and avoiding a huge pot on a very connected board.\n\nSolver: Call is the highest-EV action. The hand is too strong to fold but does not benefit enough from raising.\n\nAvoid: Folding is far too tight, while raising isolates too often against straights and stronger value hands."
+            }
+          ]
+        }
       ]
     },
     {
       "name": "River",
       "points": 400,
-      "state": {
-        "communityCards": ["2h", "7d", "Ks", "Qh", "Jh"],
-        "pot": 305,
-        "toCall": 0,
-        "players": [
-          { "position": "UTG", "stack": 790, "action": "check", "style": ["aggressive", "fish"] },
-          { "position": "CO",  "stack": 750,  "isHero": true, "style": [""] }
-        ]
-      },
-      "solutions": [
-        {"name": "pro", "percentage": 1, "action": "allin", "message": "Because X"},
-        {"name": "auto", "percentage": 0.7, "action": "raise", "message": "Because X"}
+      "communityCards": ["7c", "Jd", "8c", "Th", "7s"],
+      "actions": [
+        {
+          "position": "SB",
+          "action": "raise",
+          "amount": 4000000
+        },
+        {
+          "position": "CO",
+          "action": "fold",
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "fold",
+              "message": "Hero: Eychenne folds against a large polarized river bet on a paired board, likely expecting Zaffagnini to be underbluffing under final-table pressure.\n\nSolver: Call is the highest-EV action. T8 blocks full houses with TT and 88 while leaving missed club draws available as natural bluffs.\n\nAvoid: Raising is too ambitious because better hands continue, while folding gives up one of the strongest bluff-catchers in the range."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "call",
+              "message": "Hero: Eychenne folds against a large polarized river bet on a paired board, likely expecting Zaffagnini to be underbluffing under final-table pressure.\n\nSolver: Call is the highest-EV action. T8 blocks full houses with TT and 88 while leaving missed club draws available as natural bluffs.\n\nAvoid: Raising is too ambitious because better hands continue, while folding gives up one of the strongest bluff-catchers in the range."
+            }
+          ]
+        }
       ]
     }
   ]

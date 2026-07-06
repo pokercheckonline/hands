@@ -7,9 +7,8 @@
     "videoTimestamp": "10:02"
   },
   "hero": {
-    "name": "Steve O'Dwyer",
-    "cards": ["Qh", "Th"],
-    "position": "BTN"
+    "position": "BTN",
+    "cards": ["Qh", "Th"]
   },
   "gameInfo": {
     "blinds": [15000, 30000],
@@ -43,7 +42,22 @@
       "actions": [
         {
           "position": "BTN",
-          "action": "raise 150000"
+          "action": "raise",
+          "amount": 150000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "raise",
+              "message": "O'Dwyer raises to 150K. QTs is a strong BTN open and plays very well in position."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "raise",
+              "message": "Best Solver action. Limping gives up some value and folding is far too tight."
+            }
+          ]
         },
         {
           "position": "SB",
@@ -51,21 +65,102 @@
         },
         {
           "position": "BB",
-          "action": "call 150000"
+          "action": "call",
+          "amount": 150000
         }
-      ],
-      "solutions": [
+      ]
+    },
+    {
+      "name": "Flop",
+      "points": 200,
+      "communityCards": ["9d", "2c", "2h"],
+      "actions": [
         {
-          "name": "pro",
-          "percentage": 1,
-          "action": "raise",
-          "message": "O'Dwyer raises to 150K. QTs is a strong BTN open and plays very well in position."
+          "position": "BB",
+          "action": "call"
         },
         {
-          "name": "auto",
-          "percentage": 1,
+          "position": "BTN",
+          "action": "call",
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "call",
+              "message": "O'Dwyer checks back, controlling the pot and keeping all of Pantling's bluffs in."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "call",
+              "message": "Best Solver action. A small bet has some value, but checking performs better with this exact hand."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Turn",
+      "points": 300,
+      "communityCards": ["9d", "2c", "2h", "7h"],
+      "actions": [
+        {
+          "position": "BB",
           "action": "raise",
-          "message": "Best Solver action. Limping gives up some value and folding is far too tight."
+          "amount": 385000
+        },
+        {
+          "position": "BTN",
+          "action": "raise",
+          "amount": 385000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "call",
+              "message": "O'Dwyer calls with a strong flush draw and two overcards."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "call",
+              "message": "Best Solver action. Raising folds out bluffs, while folding gives up too much equity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "River",
+      "points": 400,
+      "communityCards": ["9d", "2c", "2h", "7h", "Qc"],
+      "actions": [
+        {
+          "position": "BB",
+          "action": "check"
+        },
+        {
+          "position": "BTN",
+          "action": "raise",
+          "amount": 750000,
+          "solutions": [
+            {
+              "name": "pro",
+              "percentage": 1,
+              "action": "raise",
+              "message": "O'Dwyer bets 750K for value after improving to top pair."
+            },
+            {
+              "name": "auto",
+              "percentage": 1,
+              "action": "raise",
+              "message": "Best Solver action. Checking loses value from 9x, pairs and bluff-catchers."
+            }
+          ]
+        },
+        {
+          "position": "BB",
+          "action": "fold"
         }
       ]
     }

@@ -86,22 +86,22 @@
       "actions": [
         {
           "position": "SB",
-          "action": "check"
+          "action": "call"
         },
         {
           "position": "CO",
-          "action": "check",
+          "action": "call",
           "solutions": [
             {
               "name": "pro",
               "percentage": 1,
-              "action": "check",
+              "action": "call",
               "message": "Hero: Eychenne checks back with middle pair and a gutshot, keeping the pot controlled and protecting his showdown value.\n\nSolver: Check is the highest-EV action. The hand can improve on many turns and does not need immediate protection.\n\nAvoid: Betting can be called by stronger hands or face a check-raise, while a large bet unnecessarily turns the hand into a bluff."
             },
             {
               "name": "auto",
               "percentage": 1,
-              "action": "check",
+              "action": "call",
               "message": "Hero: Eychenne checks back with middle pair and a gutshot, keeping the pot controlled and protecting his showdown value.\n\nSolver: Check is the highest-EV action. The hand can improve on many turns and does not need immediate protection.\n\nAvoid: Betting can be called by stronger hands or face a check-raise, while a large bet unnecessarily turns the hand into a bluff."
             }
           ]

@@ -31,6 +31,24 @@
         "name": "Chim",
         "stack": 6780000,
         "style": ["fish"]
+      },
+      {
+        "position": "HJ",
+        "name": "Mikita Badziakouski",
+        "stack": 2210000,
+        "style": ["fish"]
+      },
+      {
+        "position": "CO",
+        "name": "Christoph Vogelsang",
+        "stack": 1210000,
+        "style": ["fish", "scary", "aggressive"]
+      },
+      {
+        "position": "UTG",
+        "name": "Sam Greenwood",
+        "stack": 51210000,
+        "style": ["fish", "calm"]
       }
     ]
   },

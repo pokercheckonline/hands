@@ -71,9 +71,21 @@
             },
             {
               "name": "auto",
-              "percentage": 1,
+              "percentage": 0.2,
               "action": "raise",
               "message": "Best Solver action. Limping gives up some value and folding is far too tight."
+            },
+            {
+              "name": "miss",
+              "percentage": 0,
+              "action": "fold",
+              "message": "NEVER fold"
+            },
+            {
+              "name": "miss",
+              "percentage": 0,
+              "action": "call",
+              "message": "NEVER call"
             }
           ]
         },
